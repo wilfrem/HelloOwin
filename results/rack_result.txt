@@ -1,0 +1,55 @@
+$ab -n 40000 -c 20 http://carol-mystery.net:12345/
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking carol-mystery.net (be patient)
+Completed 4000 requests
+Completed 8000 requests
+Completed 12000 requests
+Completed 16000 requests
+Completed 20000 requests
+Completed 24000 requests
+Completed 28000 requests
+Completed 32000 requests
+Completed 36000 requests
+Completed 40000 requests
+Finished 40000 requests
+
+
+Server Software:        WEBrick/1.3.1
+Server Hostname:        carol-mystery.net
+Server Port:            12345
+
+Document Path:          /
+Document Length:        12 bytes
+
+Concurrency Level:      20
+Time taken for tests:   250.267 seconds
+Complete requests:      40000
+Failed requests:        0
+Write errors:           0
+Total transferred:      6200000 bytes
+HTML transferred:       480000 bytes
+Requests per second:    159.83 [#/sec] (mean)
+Time per request:       125.133 [ms] (mean)
+Time per request:       6.257 [ms] (mean, across all concurrent requests)
+Transfer rate:          24.19 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        1   70 442.8      2   31066
+Processing:     3   54  49.5     45     792
+Waiting:        0   46  44.7     37     767
+Total:          4  124 443.3     52   31074
+
+Percentage of the requests served within a certain time (ms)
+  50%     52
+  66%     70
+  75%     83
+  80%     93
+  90%    133
+  95%    311
+  98%   1054
+  99%   1111
+ 100%  31074 (longest request)
